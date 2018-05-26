@@ -13,7 +13,7 @@ print(name, type(num))
 
 # 明示的に型を変換することもできる
 name2 = '1'
-new_num = int(name2 )
+new_num = int(name2)
 print(name2, type(new_num))
 
 # python3.6から型を宣言可能
