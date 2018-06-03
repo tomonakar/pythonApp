@@ -46,3 +46,10 @@ for i in range(10):
 
 for _ in range(10):
     print('hello')
+
+# -------------------------------------------- #
+# enumerate
+# -------------------------------------------- #
+
+for i, fruit in enumerate(['apple', 'banana', 'orange']):
+    print(i, fruit)
