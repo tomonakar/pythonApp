@@ -33,3 +33,16 @@ for fruit in ['apple', 'banana', 'orange']:
     print(fruit)
 else:
     print('I ate all')
+
+# -------------------------------------------- #
+# range
+# -------------------------------------------- #
+
+for i in range(2, 10, 3):
+    print(i)
+
+for i in range(10):
+    print(i, 'hello')
+
+for _ in range(10):
+    print('hello')
