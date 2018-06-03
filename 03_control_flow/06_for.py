@@ -25,3 +25,11 @@ for word in ['My', 'name', 'is', 'mike']:
     if word == 'name':
         continue
     print(word)
+
+for fruit in ['apple', 'banana', 'orange']:
+    # if fruit == 'banana'
+    #     print('stop eating')
+    #     break
+    print(fruit)
+else:
+    print('I ate all')
