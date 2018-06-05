@@ -40,3 +40,30 @@ def add_num(a: int, b: int) -> int:
 
 # 型を無視して関数を使うと、動的に型変換をしてくれる
 print(add_num('a', 'b'))
+
+# -------------------------------------------------- #
+# 位置引数とキーワード引数とデフォルト引数
+# -------------------------------------------------- #
+
+
+def menu(entree, drink, dessert):
+    print('entree =', entree)
+    print('drink = ', drink)
+    print('dessert =', dessert)
+
+
+# 位置引数
+menu('肉', 'ジュース', 'ケーキ')
+
+# キーワード引数
+menu(entree='beef', dessert='ice', drink='beer')
+
+
+# デフォルト引数
+def second_menu(entree='鳥肉', dessert='モンブラン', drink='ジンジャーエール'):
+    print('entree =', entree)
+    print('drink = ', drink)
+    print('dessert =', dessert)
+
+
+second_menu()
