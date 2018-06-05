@@ -167,3 +167,28 @@ def menu_test3(food, *args, **kwargs):
 
 
 menu_test3('banana', 'apple', 'orange', entree='beef', drink='coffee')
+
+# -------------------------------------------------- #
+# Docstrings
+# -------------------------------------------------- #
+
+
+# pythonの関数のドキュメントは、関数宣言の後に記述する
+def example_func(param1, param2):
+    """Example function with types documented in the docstrings.
+
+    Args:
+        param1 (int): The first parameter.
+        param2 (str): The second parameter.
+
+    Returns:
+        bool: The return value. True for success. False otherwise.
+    """
+    print(param1)
+    print(param2)
+    return True
+
+
+# 関数ないに記述したドキュメントは以下のように出力できる
+print(example_func.__doc__)
+help(example_func)
