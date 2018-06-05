@@ -68,3 +68,17 @@ for i in range(len(days)):
 # zip関数でこう書ける
 for day, fruit, drink in zip(days, fruits, drinks):
     print(day, fruit, drink)
+
+# -------------------------------------------- #
+# 辞書をfor文で回す
+# -------------------------------------------- #
+
+d = {'x': 100, 'y': 200}
+
+for v in d:
+    print(v)
+
+for k, v in d.items():
+    print(k, ':', v)
+
+print(d.items())
