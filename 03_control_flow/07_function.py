@@ -130,3 +130,40 @@ def say_something(word, *args):
 
 
 say_something('Hi!', 'Mike', 'Nancy')
+
+# -------------------------------------------------- #
+# キーワード引数の辞書化
+# -------------------------------------------------- #
+
+
+# アスタリスクを引数の前に２つつけることで、キーワード引数を辞書型データで受け取ることができる
+def menu_test(**kwargs):
+    print(kwargs)
+
+
+menu_test(entree='beef', drink='coffee')
+
+
+# 以下のように使える
+def menu_test2(**kwargs):
+    for k, v in kwargs.items():
+        print(k, v)
+
+
+menu_test2(entree='beef', drink='coffee')
+
+d = {'entree': 'beef', 'drink': 'ice coffee', 'dessert': 'ice'}
+
+# 上記で作成した辞書型の変数を **d で引数にセットすると、展開されてキーワード引数の形で渡される
+# 渡された後にまた辞書化されるので、コードの見やすさを意識してこのような書き方はよく行われる。
+menu_test2(**d)
+
+
+# 位置引数、タプル化、辞書化引数を全て渡すことも可能。ただし、引数を設置する順序はタプル化の後に辞書化にする必要がある
+def menu_test3(food, *args, **kwargs):
+    print(food)
+    print(args)
+    print(kwargs)
+
+
+menu_test3('banana', 'apple', 'orange', entree='beef', drink='coffee')
