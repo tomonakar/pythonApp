@@ -108,3 +108,25 @@ print(test_func2(100))
 
 res2 = test_func2(100)
 print(res2)
+
+# -------------------------------------------------- #
+# 位置引数のタプル化
+# -------------------------------------------------- #
+
+
+# 引数の前にアスタリスクを置くと、全ての引数をタプルに入れて受け取ることができる
+def taple_test(*args):
+    print(args)
+
+
+taple_test('aaa', 'bbb', 'ccc')
+
+
+# ひとつずつ引数を扱いたい場合は以下のようにする
+def say_something(word, *args):
+    print('word', word)
+    for arg in args:
+        print(arg)
+
+
+say_something('Hi!', 'Mike', 'Nancy')
